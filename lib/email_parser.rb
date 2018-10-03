@@ -25,7 +25,14 @@ class EmailParser
   end
   
   
-   @emails=@emails.map{ |email| email.split(" ") if email.strip.include?(" ")}.compact
+   @emails=@emails.map{ |email|
+   if email.strip.include?(" ")
+   email.split(" ") 
+ else
+   email
+ end
+     
+   }.compact
     
   
   
