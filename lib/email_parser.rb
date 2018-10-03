@@ -23,11 +23,7 @@ class EmailParser
   
    
     
-    @emails=@emails.map{ 
-      |email| 
-      email.split(" ") if email.include?(" ")
-      
-    }
+ 
     
   
   
