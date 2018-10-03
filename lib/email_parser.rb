@@ -17,7 +17,7 @@ class EmailParser
     
    if  @emails.include?(",") 
     
-    @emails.split(punctuation).each{ |email| email.strip}
+    @emails=@emails.split(punctuation).each{ |email| email.strip}
   end
   
 end
