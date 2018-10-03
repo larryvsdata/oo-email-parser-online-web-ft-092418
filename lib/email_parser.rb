@@ -21,11 +21,13 @@ class EmailParser
     @emails=@emails.split(",").map{ |email| email.strip}
   end
   
-   
-    
+   #email.split(" ") 
+    #email.include?(" ")
     @emails=@emails.map{ 
       |email| 
-      email
+      if true 
+        email
+      end
       
     }
     
