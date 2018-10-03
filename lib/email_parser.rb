@@ -15,7 +15,7 @@ class EmailParser
   def parse
     
     punctuation=""
-    @emails.include?(",") : punctuation="," : punctuation=" "
+    @emails.include?(",") ? punctuation="," : punctuation=" "
     
     @emails.split(punctuation).map{ |email| email.strip}.uniq
   end
