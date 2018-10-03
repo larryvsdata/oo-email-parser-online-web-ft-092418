@@ -17,7 +17,13 @@ class EmailParser
     
    if  @emails.include?(",") 
     
-    @emails=@emails.split(punctuation).each{ |email| email.strip}
+    @emails=@emails.split(",").each{ |email| email.strip}
   end
+  
+     if  @emails.include?(" ") 
+    
+    @emails=@emails.split(" ").each{ |email| email.strip}
+  end
+  @emails.uniq
   
 end
