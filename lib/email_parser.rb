@@ -19,17 +19,12 @@ class EmailParser
    if  @emails.include?(",") 
     
     @emails=@emails.split(",").map{ |email| email.strip}
+    
+    elsif  @emails.include?(" ") 
+    @emails=@emails.split(",").map{ |email| email.strip}
   end
   
-   #email.split(" ") 
-    #email.include?(" ")
-    @emails=@emails.each{ 
-      |email| 
-       
-       puts  email
-      
-      
-    }
+   
     
   
   
