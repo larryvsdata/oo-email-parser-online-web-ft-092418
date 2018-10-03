@@ -25,9 +25,9 @@ class EmailParser
     #email.include?(" ")
     @emails=@emails.map{ 
       |email| 
-      if true 
+       
         email
-      end
+      
       
     }
     
