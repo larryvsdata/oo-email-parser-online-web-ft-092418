@@ -23,7 +23,11 @@ class EmailParser
   
    
     
- 
+    @emails=@emails.map{ 
+      |email| 
+      email
+      
+    }
     
   
   
