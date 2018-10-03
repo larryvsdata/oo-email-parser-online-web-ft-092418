@@ -21,7 +21,7 @@ class EmailParser
     @emails=@emails.split(",").map{ |email| email.strip}
     
     elsif  @emails.include?(" ") 
-    @emails=@emails.split(",").map{ |email| email.strip}
+    @emails=@emails.split(" ").map{ |email| email.strip}
   end
   
    
