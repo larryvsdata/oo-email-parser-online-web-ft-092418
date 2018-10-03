@@ -20,7 +20,7 @@ class EmailParser
     @emails=@emails.split(",").each{ |email| email.strip}
   end
   
-     if  @emails.include?(" ") 
+  if  @emails.include?(" ") 
     
     @emails=@emails.split(" ").each{ |email| email.strip}
   end
