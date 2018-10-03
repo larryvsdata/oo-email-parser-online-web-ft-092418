@@ -13,7 +13,7 @@ class EmailParser
   end
   
   def parse
-    @emails.split(",").map{ |email| email.strip}.uniq
+    @emails.split(",").each{ |email| email.strip}
   end
   
 end
