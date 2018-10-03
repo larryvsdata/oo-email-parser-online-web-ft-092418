@@ -23,10 +23,10 @@ class EmailParser
   
    #email.split(" ") 
     #email.include?(" ")
-    @emails=@emails.map{ 
+    @emails=@emails.each{ 
       |email| 
        
-        email
+       puts  email
       
       
     }
